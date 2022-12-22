@@ -3,9 +3,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите номер дня недели (1-7) или название дня недели: ");
-        String day = sc.nextLine();
+        String day = sc.nextLine().trim();
         day = day.substring(0,1).toUpperCase() + day.substring(1);
-        switch(day.trim()) {
+        switch(day) {
             case "1" :
                 System.out.println("Понедельник.");
                 break;
